@@ -1,6 +1,6 @@
 
-public abstract class Conta implements IConta {
-	
+public abstract class Conta implements InterfaceConta {
+
 	private static final int AGENCIA_PADRAO = 1;
 	private static int SEQUENCIAL = 1;
 
@@ -18,17 +18,20 @@ public abstract class Conta implements IConta {
 	@Override
 	public void sacar(double valor) {
 		saldo -= valor;
+		System.out.println(String.format("Saque R$%.2f realizado com sucesso.", valor));
 	}
 
 	@Override
 	public void depositar(double valor) {
 		saldo += valor;
+		System.out.println(String.format("Depósito R$%.2f realizado com sucesso.", valor));
 	}
 
 	@Override
-	public void transferir(double valor, IConta contaDestino) {
+	public void transferir(double valor, InterfaceConta contaDestino) {
 		this.sacar(valor);
 		contaDestino.depositar(valor);
+		System.out.println("Transferência realizada com sucesso.");
 	}
 
 	public int getAgencia() {

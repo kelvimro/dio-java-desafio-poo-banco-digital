@@ -1,18 +1,54 @@
-# Criando um Banco Digital com Java e Orientação a Objetos
+# DIO Java Course Exercise: Banking System
 
-## 02/08/2021 - [Mentoria #1: Tire Suas Dúvidas Sobre Orientação a Objetos](https://www.youtube.com/watch?v=YS6ouOhkyNI)
+This repository is dedicated to submitting the **[OOP Digital Bank Challenge](https://github.com/falvojr/lab-banco-digital-oo)** from the **[Java course at Digital Innovation One (DIO)](https://web.dio.me/)**.
 
-Desafio: Considerando nosso conhecimento no domínio bancário, iremos abstrair uma solução Orientada a Objetos em Java. Para isso, vamos interpretar o seguinte cenário:
-“Um banco oferece aos seus clientes dois tipos de contas (corrente e poupança), as quais possuem as funcionalidades de depósito, saque e transferência (entre contas da própria instituição).”
+## 📌 Challenge Description
 
-### Abstração
-Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.
+The challenge consists of modeling and implementing a **"Banking System"** using **OOP concepts in Java**. The system must support the following functionalities:
 
-### Encapsulamento
-Encapsular significa esconder a implementação dos objetos, criando assim interfaces de uso mais concisas e fáceis de usar/entender. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
+- Checking Account
+- Savings Account
+- Deposit, Withdrawal, and Transfer operations
 
-### Herança
-Permite que você defina uma classe filha que reutiliza (herda), estende ou modifica o comportamento de uma classe pai. A classe cujos membros são herdados é chamada de classe base. A classe que herda os membros da classe base é chamada de classe derivada.
+## 🎯 Purpose
 
-### Polimorfismo
-Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é capacidade de tratar objetos criados a partir das classes específicas como objetos de uma classe genérica. Cuidado, polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referimos a ele.
+- Practice Object-Oriented Programming (OOP) concepts
+- Work with Encapsulation, Inheritance, and Polymorphism in Java
+- Implement a basic banking system following software design principles
+
+## 🚀 Technologies Used
+
+-
+-
+-
+-
+
+## ▶️ Running the Project
+
+Clone this repository:
+
+```sh
+git clone https://github.com/kelvimro/dio-java-desafio-poo-banco-digital
+cd dio-java-desafio-poo-banco-digital\src
+```
+
+Compile and run the Java program:
+
+```sh
+javac Main.java
+java main.java
+```
+
+## 📌 Example of Execution
+
+Valid Input:
+
+```sh
+
+```
+
+Output:
+
+```sh
+
+```
