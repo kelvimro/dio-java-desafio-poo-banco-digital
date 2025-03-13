@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Banco {
+	Scanner scanner = new Scanner(System.in);
 	private static final int AGENCIA_PADRAO = 1;
 	private String nome;
 	private List<Conta> contas;
@@ -29,7 +30,6 @@ public class Banco {
 	}
 
 	public void adicionarConta() {
-		Scanner scanner = new Scanner(System.in);
 		// Create a new object of the class Cliente
 		Cliente novoCliente = new Cliente();
 		System.out.println("Informe o nome do cliente: ");
@@ -66,7 +66,6 @@ public class Banco {
 					break;
 			}
 		}
-		scanner.close();
 	}
 
 	public Conta buscarConta(int agencia, int conta) {
@@ -93,7 +92,6 @@ public class Banco {
 	}
 
 	public void abrirBanco() {
-		Scanner scanner = new Scanner(System.in);
 		int opcao = -1;
 		this.menuBanco();
 		System.out.println("Digite uma opção.:");
@@ -104,6 +102,7 @@ public class Banco {
 			if (opcao == 1) {
 				this.adicionarConta();
 				this.menuBanco();
+				opcao = -1;
 			} else if (opcao == 2) {
 				System.out.println("Informar o numero da conta: ");
 				int conta = scanner.nextInt();
@@ -112,6 +111,7 @@ public class Banco {
 				if (contaSelecionada != null) {
 					this.opcoesDaConta(contaSelecionada);
 					this.menuBanco();
+					opcao = -1;
 				}
 			} else if (opcao == 0) {
 				System.out.println("Saindo...");
@@ -122,7 +122,6 @@ public class Banco {
 			opcao = scanner.nextInt();
 			scanner.nextLine();
 		}
-		scanner.close();
 	}
 
 	private void menuDaConta(Conta conta) {
@@ -135,7 +134,6 @@ public class Banco {
 	}
 
 	public void opcoesDaConta(Conta conta) {
-		Scanner scanner = new Scanner(System.in);
 		int opcao = -1;
 		this.menuDaConta(conta);
 		System.out.println("Digite uma opção.:");
@@ -183,7 +181,6 @@ public class Banco {
 			opcao = scanner.nextInt();
 			scanner.nextLine();
 		}
-		scanner.close();
 	}
 
 }
